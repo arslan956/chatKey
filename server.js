@@ -24,6 +24,10 @@ app.get('/messages', (req, res) => {
   })
 })
 
+app.get('/number',(req,res)=>{
+  res.send("Number ranging from 0 to 10");
+})
+
 
 app.get('/messages/:user', (req, res) => {
   var user = req.params.user
